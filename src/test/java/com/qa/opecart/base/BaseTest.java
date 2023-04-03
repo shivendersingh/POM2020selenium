@@ -1,21 +1,20 @@
 package com.qa.opecart.base;
 
-import java.com.qa.blaze.factory.Driverfactory;
-import java.com.qa.opencart.pages.LoginPage;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import com.qa.blaze.factory.Driverfactory;
+
 public class BaseTest {
 	private WebDriver driver;
-    protected LoginPage loginpage;
+    protected com.qa.opencart.pages.LoginPage loginpage;
 	Driverfactory df;
 	@BeforeTest
 	public void setup() throws InterruptedException {
 		df= new Driverfactory();
 		driver=df.crossbrowser("chrome");
-		loginpage = new LoginPage(driver);
+		loginpage = new com.qa.opencart.pages.LoginPage(driver);
 	}
 	
 	@AfterTest

@@ -1,10 +1,10 @@
 package com.qa.opencart.pages;
 
-import java.com.qa.opencart.utils.ElementUtils;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
+
+import com.qa.opencart.utils.ElementUtils;
 
 public class LoginPage {
 	//private WebDriver driver;

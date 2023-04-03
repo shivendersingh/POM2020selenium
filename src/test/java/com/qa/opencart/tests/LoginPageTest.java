@@ -1,9 +1,10 @@
 package com.qa.opencart.tests;
 
-import java.com.qa.opecart.base.BaseTest;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import com.qa.opecart.base.BaseTest;
+import com.qa.opencart.utils.Constant;
 
 /*
  * here in this test file we are validating the login page
