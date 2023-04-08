@@ -6,5 +6,7 @@ public class Loggerfactory {
 	private final static Logger logger = ColorLogFactory.getLogger(Loggerfactory.class);
 	public static void main(String[] args) {
 		logger.info("HI CHaran!!!!!!!!!!!1");
+		logger.info("HI shivender!!!!!!");
+		
 	}
 }
