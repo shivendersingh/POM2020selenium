@@ -42,8 +42,8 @@ public class ElementUtils {
 	public static void sendkeysvalue(By element ,String Passyourvalueforthesendkeymethods) {
 		findelement(element).sendKeys(Passyourvalueforthesendkeymethods);
 	}
-	
-	
+
+
 	public static void sendkeysvalueandwait(By element ,String Passyourvalueforthesendkeymethods,int wait) throws InterruptedException {
 		ElementUtils.hardcorewait(wait);
 		findelement(element).sendKeys(Passyourvalueforthesendkeymethods);
@@ -188,7 +188,7 @@ public class ElementUtils {
 			System.out.println("field is not enabled");
 		}
 	}
-	
+
 	/**
 	 * 
 	 * @return title
@@ -237,5 +237,39 @@ public class ElementUtils {
 
 	public static By tagname(String passthetagvalue) {
 		return By.tagName(passthetagvalue);
+	}
+	/**
+	 * xpath by contains method
+	 * @param tag
+	 * @param attribute
+	 * @param input
+	 * @return
+	 */
+	public static By xpathbycontainsmethod(String tag,String attribute,String input) {
+		return By.xpath("//"+tag+"[contains(@"+attribute+",'"+input+"')]");
+	}
+	/**
+	 * Xpath is used for or
+	 * @param tag
+	 * @param attribute
+	 * @param secondattribute
+	 * @param attributevalue
+	 * @param secondattributevalue
+	 * @return
+	 */
+	public static By xpathbyor(String tag,String attribute,String secondattribute,String attributevalue,String secondattributevalue) {
+		return By.xpath("//"+tag+"[@"+attribute+"='"+attributevalue+"'or@"+secondattribute+"='"+secondattributevalue+"']");
+	}
+	/**
+	 * Xpath is used for and
+	 * @param tag
+	 * @param attribute
+	 * @param secondattribute
+	 * @param attributevalue
+	 * @param secondattributevalue
+	 * @return
+	 */
+	public static By xpathbyand(String tag,String attribute,String secondattribute,String attributevalue,String secondattributevalue) {
+		return By.xpath("//"+tag+"[@"+attribute+"='"+attributevalue+"'and@"+secondattribute+"='"+secondattributevalue+"']");
 	}
 }
