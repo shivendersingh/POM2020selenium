@@ -268,8 +268,11 @@ public class ElementUtils {
 	 * @param attributevalue
 	 * @param secondattributevalue
 	 * @return
+	 * @throws InterruptedException 
 	 */
-	public static By xpathbyand(String tag,String attribute,String secondattribute,String attributevalue,String secondattributevalue) {
+	public static By xpathbyand(String tag,String attribute,String secondattribute,String attributevalue,String secondattributevalue, int wait) throws InterruptedException {
+		ElementUtils.hardcorewait(wait);
 		return By.xpath("//"+tag+"[@"+attribute+"='"+attributevalue+"'and@"+secondattribute+"='"+secondattributevalue+"']");
+		
 	}
 }
