@@ -22,8 +22,7 @@ public class LoginPageTest extends BaseTest{
 		Assert.assertTrue(loginpage.isloginlinkexist());
 	}
 	@Test (priority = 1)
-	public void loginTest() throws InterruptedException {
-		
+	public void loginTest() throws InterruptedException {	
 		loginpage.dologin("shivender339@gmail.com", "Shivender#12");
 	}
 }

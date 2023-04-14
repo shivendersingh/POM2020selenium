@@ -6,9 +6,12 @@ import org.testng.annotations.BeforeTest;
 
 import com.qa.blaze.factory.Driverfactory;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+
 public class BaseTest {
 	private WebDriver driver;
-    protected com.qa.opencart.pages.LoginPage loginpage;
+    public com.qa.opencart.pages.LoginPage loginpage;
 	Driverfactory df;
 	@BeforeTest
 	public void setup() throws InterruptedException {

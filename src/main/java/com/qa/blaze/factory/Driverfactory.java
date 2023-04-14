@@ -40,7 +40,8 @@ public class Driverfactory {
 		}
 		driver.manage().window().fullscreen();
 		driver.manage().deleteAllCookies();
-		driver.get("https://www.demoblaze.com/");
+		driver.get("https://www.demoblaze.com/index.html");
+		//driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		return driver;
 	}
 	/**
