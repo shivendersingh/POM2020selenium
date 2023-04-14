@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+E:\charanseleniumproject\.metadata\.plugins\org.eclipse.jdt.core
-2947524757.index
-1865797976.index
