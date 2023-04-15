@@ -8,5 +8,4 @@ public class Newmerge {
 	public static void main(String[] args) {
 		System.out.println("Local data to merge");
 	}
-
 }
