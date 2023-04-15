@@ -9,6 +9,6 @@ public class Newmerge {
 		System.out.println("Local data to merge");
 	}
 	public void LogoutMethod(){
-		System.out.println("remote logout method");
+		System.out.println("Local logout method");
 	}
 }
